@@ -14,7 +14,10 @@ ul {
   margin-bottom: 0;
 }
 a,
-a:hover {
+a:hover,
+a:active,
+a:focus,
+a:visited {
   text-decoration: none;
 }
 a:hover {
@@ -530,11 +533,11 @@ h1 {
   height: 170px;
 }
 .home_promo_list > li > a:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .home_main {
   padding-top: 4px;
@@ -597,14 +600,30 @@ h1 {
   background: #f1eded;
   border-top-color: #e53935;
 }
-.home_main .hmt_list_tel {
+.home_main .hmt_list_model {
   width: 992px;
 }
-.home_main .hmt_list_tel > li {
+.home_main .hmt_list_model > li {
   height: 300px;
   margin-bottom: 14px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
-.home_main .hmt_list_tel > li > .hmt_item {
+.home_main .hmt_list_model > li:hover {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 88;
+}
+.home_main .hmt_list_model > li > .hmt_item {
   padding-top: 20px;
   height: 300px;
 }
@@ -614,17 +633,6 @@ h1 {
   float: left;
   margin-left: 14px;
   border-top: solid 1px transparent;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.hmt_list > li:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .hmt_list > li .hmt_item {
   display: block;
@@ -708,9 +716,16 @@ h1 {
 .hmt_left a {
   display: block;
 }
-.hmt_left a img {
+.hmt_left .one img {
   width: 100%;
   height: 614px;
+}
+.hmt_left .dbl {
+  margin-bottom: 14px;
+}
+.hmt_left .dbl img {
+  width: 100%;
+  height: 300px;
 }
 .hmt_more {
   position: absolute;
@@ -758,4 +773,171 @@ h1 {
 }
 .hmt_more a em i {
   font-size: 12px;
+}
+.hmt_last_wrapper {
+  width: 234px;
+  margin-left: 14px;
+  float: left;
+}
+.hmt_last_lbox {
+  margin-bottom: 14px;
+}
+.hmt_last_lbox .hmt_item_last {
+  position: relative;
+  display: block;
+  height: 143px;
+  padding-top: 40px;
+  color: #333;
+  background: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.hmt_last_lbox .hmt_item_last:hover {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 88;
+}
+.hmt_last_lbox .hmt_item_last .title {
+  margin: 0 110px 5px 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.hmt_last_lbox .hmt_item_last .price {
+  margin: 0 110px 0 30px;
+  font-size: 12px;
+  color: #ff6700;
+}
+.hmt_last_lbox .hmt_item_last .more {
+  margin: 0 110px 0 30px;
+  font-size: 18px;
+}
+.hmt_last_lbox .hmt_item_last .more em {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+}
+.hmt_last_lbox .hmt_item_last .more_icon {
+  position: absolute;
+  right: 35px;
+  top: 39px;
+  color: #ff6700;
+}
+.hmt_last_lbox .hmt_item_last .more_icon img {
+  width: 48px;
+  height: 48px;
+}
+.hmt_last_lbox .hmt_item_last .pro {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+}
+.hmt_last_lbox .hmt_item_last .pro img {
+  width: 80px;
+  height: 80px;
+}
+.hmt_tab li {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 26px;
+  font-size: 16px;
+  color: #424242;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hmt_tab li.active {
+  color: #ff6700;
+  border-color: #ff6700;
+}
+.hmt_video_list li {
+  float: left;
+}
+.hmt_video_list li a {
+  display: block;
+  width: 296px;
+  height: 285px;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  text-align: center;
+  background: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.hmt_video_list li a:hover {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 88;
+}
+.hmt_video_list li a .video {
+  height: 180px;
+  position: relative;
+}
+.hmt_video_list li a .video img {
+  width: 100%;
+  height: 100%;
+}
+.hmt_video_list li a .video .play {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  width: 36px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.hmt_video_list li a .video .play:hover {
+  background: #ff6700;
+  border-color: #ff6700;
+}
+.hmt_video_list li a .title {
+  margin: 28px 14px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hmt_video_list li a .desc {
+  height: 18px;
+  margin: 0 14px;
+  font-size: 12px;
+  color: #b0b0b0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.hmt_video_list li:first-of-type a {
+  margin-left: 0;
 }

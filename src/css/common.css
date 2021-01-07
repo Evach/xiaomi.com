@@ -14,7 +14,10 @@ ul {
   margin-bottom: 0;
 }
 a,
-a:hover {
+a:hover,
+a:active,
+a:focus,
+a:visited {
   text-decoration: none;
 }
 a:hover {
