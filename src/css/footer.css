@@ -1,0 +1,195 @@
+.footer_service {
+  padding: 27px 0;
+  border-bottom: 1px solid #b0b0b0;
+}
+.footer_service ul li {
+  float: left;
+  width: 245.2px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  border-left: 1px solid #b0b0b0;
+  text-align: center;
+}
+.footer_service ul li:first-child {
+  border-left-color: transparent;
+}
+.footer_service ul li a {
+  color: #616161;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer_service ul li a:hover {
+  color: #ff6700;
+}
+.footer_service ul li a em {
+  margin-right: 8px;
+  font-size: 18px;
+  vertical-align: -4px;
+}
+.footer_links {
+  padding: 40px 0;
+}
+.footer_links .flinks_item {
+  float: left;
+  width: 160px;
+  margin: 0;
+}
+.footer_links .flinks_item > dt {
+  margin: -1px 0 26px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #424242;
+}
+.footer_links .flinks_item > dd {
+  margin: 10px 0 0;
+  font-size: 12px;
+}
+.footer_links .flinks_item > dd > a {
+  color: #757575;
+}
+.footer_links .flinks_item_right {
+  float: right;
+  width: 252px;
+  border-left: 1px solid #e0e0e0;
+  text-align: center;
+  color: #616161;
+}
+.footer_links .flinks_item_right .phone {
+  font-size: 22px;
+  line-height: 1;
+  color: #ff6700;
+}
+.footer_links .flinks_item_right p {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+}
+.footer_links .flinks_item_right .staff {
+  display: inline-block;
+  width: 118px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ff6700;
+  text-align: center;
+  background: #fff;
+  color: #ff6700;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.footer_links .flinks_item_right .staff:hover {
+  background: #ff6700;
+  color: #fff;
+}
+.footer_links .flinks_item_right .staff em {
+  vertical-align: -1px;
+}
+.footer_links .flinks_item_right .follow {
+  font-size: 12px;
+  margin-top: 10px;
+  position: relative;
+}
+.footer_links .flinks_item_right .follow a {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-top: -3px;
+}
+.footer_links .flinks_item_right .follow a.wb {
+  background: url('../img/wb.png') 50% 0 no-repeat;
+  background-size: cover;
+}
+.footer_links .flinks_item_right .follow a.wb:hover {
+  background: url('../img/wb@2x.png') 50% 0 no-repeat;
+  background-size: cover;
+}
+.footer_links .flinks_item_right .follow a.wx {
+  background: url('../img/wx.png') 50% 0 no-repeat;
+  background-size: cover;
+}
+.footer_links .flinks_item_right .follow a.wx:hover {
+  background: url('../img/wx@2x.png') 50% 0 no-repeat;
+  background-size: cover;
+}
+.footer_links .flinks_item_right .follow a.wx:hover + img {
+  display: block;
+}
+.footer_links .flinks_item_right .follow img {
+  display: none;
+  width: 126px;
+  height: 126px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  z-index: 2;
+}
+.footer_info {
+  padding: 30px 0;
+  font-size: 12px;
+  background: #fafafa;
+}
+.footer_info .finfo_cont {
+  position: relative;
+}
+.footer_info .finfo_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+  background: url('../img/logo-footer.png') no-repeat 50% 50%;
+}
+.footer_info .finfo_text {
+  color: #b0b0b0;
+  padding-left: 67px;
+}
+.footer_info .finfo_text .sites {
+  margin: 0;
+  line-height: 18px;
+}
+.footer_info .finfo_text .sites a {
+  color: #757575;
+}
+.footer_info .finfo_text .coryright {
+  line-height: 18px;
+}
+.footer_info .finfo_text .coryright a {
+  color: #b0b0b0;
+}
+.footer_info .finfo_links {
+  margin: 4px 0 15px;
+  padding-left: 67px;
+}
+.footer_info .finfo_links a {
+  display: inline-block;
+}
+.footer_info .finfo_links a img {
+  width: auto;
+  height: 28px;
+  margin-left: 0;
+}
+.footer_info .finfo_links a.safe img {
+  height: 40px;
+}
+.footer_info .finfo_links a.safe img:last-child {
+  display: none;
+}
+.footer_target {
+  margin: 30px auto 0;
+  width: 100%;
+  height: 19px;
+}
+.footer_target img {
+  height: 100%;
+  margin: auto;
+}

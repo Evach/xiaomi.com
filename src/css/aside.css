@@ -1,0 +1,81 @@
+.aside {
+  position: fixed;
+  left: 50%;
+  right: auto;
+  margin-left: 613px;
+  bottom: 40px;
+}
+.aside_tool li {
+  position: relative;
+  width: 27px;
+  height: 42px;
+  border: 1px solid #f5f5f5;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.aside_tool li > img {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+.aside_tool li.toTop {
+  margin-top: 14px;
+  visibility: hidden;
+}
+.aside_tool li .tag {
+  display: none;
+  position: absolute;
+  right: 145%;
+  top: 0;
+  padding: 0 8px;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  z-index: 999;
+}
+.aside_tool li .tag::before,
+.aside_tool li .tag::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 0;
+  height: 0;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  overflow: hidden;
+}
+.aside_tool li .tag::before {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f5f5f5;
+  right: -13px;
+  z-index: 1;
+}
+.aside_tool li .tag::after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+  right: -12px;
+  z-index: 2;
+}
+.aside_tool li .tagimg > img {
+  width: 100px;
+  height: 100px;
+  margin: 6px auto;
+}
+.aside_tool li .tagimg > .desc {
+  display: block;
+  width: 82px;
+  margin: 14px auto 0;
+  color: #757575;
+  text-align: center;
+}
+.aside_tool li .tagtext {
+  top: 50%;
+  margin-top: -15px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+.aside_tool li .tagtext::before,
+.aside_tool li .tagtext::after {
+  top: 15px;
+}

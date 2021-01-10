@@ -1,3 +1,84 @@
+// 常用参数
+@orange:#ff6700;
+@gray:#b0b0b0;
+@topHei: 40px;
+@carHei: 100px;
+@tempWid: 234px;
+@tempHei: 340px;
+@baseUrl:'../img/';
+
+.ellipsis(){//省略号
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+// 圆角
+.corner(@radius){
+    border-radius:@radius;
+    -webkit-border-radius:@radius;
+    -o-border-radius:@radius;
+    -moz-border-radius:@radius;
+    -ms-border-radius:@radius;
+}
+// 阴影
+.boxShadow(...){
+    box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+}
+// 动画
+.transition(...) {
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+.transform(...) {
+    -webkit-transform: @arguments;
+    -moz-transform: @arguments;
+    -o-transform: @arguments;
+    transform: @arguments;
+}
+/**
+* animation
+*/
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+    @keyframes @name {
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+    @-moz-keyframes @name {
+        @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+    @-o-keyframes @name {
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+    @-webkit-keyframes  @name{
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+    .keyframes(moz,@name,@content);
+    .keyframes(o,@name,@content);
+    .keyframes(webkit,@name,@content);
+    .keyframes(def,@name,@content);
+}
+.animation(...){
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -ms-animation: @arguments;
+    -o-animation:  @arguments;
+    animation: @arguments;
+}
+
+
 // swiper
 .swiper_wrapper{
     height: 460px;
@@ -6,16 +87,15 @@
     .swiper_list{
         >li{
             >a{
-                display: none;
+                display: block;
                 img{
                     width: 100%;
                     height: 100%;
                 }
             }
             >a.active{
-                display: block;
+                // display: block;
             }
-            
         }
     }
     .swiper_pagination{
@@ -24,18 +104,19 @@
         right: 30px;
         bottom: 20px;
         text-align: right;
-        >a{
+        z-index: 99;
+        >span{
             display: inline-block;
             .corner(50%);
             width: 10px;
             height: 10px;
             margin: 0 3px;
-            background: rgba(0,0,0,.4);
             border: solid 2px #fff;
             border-color: hsla(0,0%,100%,.3);
-
+            background: rgba(0,0,0,.4);
+            opacity: 1;
         }
-        >a.on{
+        >span:hover,>span.swiper-pagination-bullet-active{
             background: hsla(0,0%,100%,.4);
             border-color: rgba(0,0,0,.4);
         }
@@ -90,7 +171,7 @@
             padding-top: 18px;
             color: #fff;
             opacity: .7;
-            .transition(all .3s);
+            .transition(opacity .3s);
             &::before,&::after{
                 content: '';
                 display: block;
