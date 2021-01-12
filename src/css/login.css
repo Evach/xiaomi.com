@@ -1,0 +1,274 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6700;
+}
+em,
+i,
+strong,
+b {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+img,
+input,
+button {
+  outline: none;
+}
+h1 {
+  margin: 0;
+}
+.glyphicon {
+  top: 0;
+}
+.contain {
+  width: 1226px;
+  margin: 0 auto;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/**
+* animation
+*/
+body {
+  color: #757575;
+}
+.log_header {
+  width: 1130px;
+  margin: 0 auto;
+}
+.log_header .title {
+  display: block;
+  width: 200px;
+}
+.log_header .title img {
+  width: 200px;
+  height: 98px;
+}
+.log_main {
+  position: relative;
+}
+.log_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 588px;
+  z-index: -1;
+  background: url(../img/log_bg.jpg) no-repeat top center;
+}
+.log_panel {
+  width: 1130px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.log_panel .log_box {
+  float: right;
+  width: 410px;
+  min-height: 556px;
+  margin-top: 32px;
+  font-size: 14px;
+  z-index: 4;
+  background: #fff;
+}
+.log_nav_tab {
+  padding: 27px 0 24px;
+  text-align: center;
+  font-size: 24px;
+}
+.log_nav_tab > a {
+  color: #666;
+}
+.log_nav_tab > a.on,
+.log_nav_tab > a:hover {
+  color: #f56600;
+}
+.log_nav_tab .line {
+  width: 1px;
+  height: 24px;
+  margin: 0 35px 0 42px;
+  border: 1px solid #e0e0e0;
+  background: #7e7e7e;
+  color: #666;
+}
+.log_area {
+  width: 348px;
+  margin: 0 auto;
+}
+.log_area > input {
+  width: 100%;
+  height: 50px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  display: block;
+  margin-bottom: 14px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.log_area > input.err {
+  border-color: #f56600;
+}
+.log_area > button {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ff6700;
+  cursor: pointer;
+  border: none;
+}
+.tip_err {
+  margin-bottom: 5px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #f66;
+  display: none;
+}
+.tip_err .icon_error {
+  width: 14px;
+  height: 14px;
+  margin: -1px 5px 0 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/error.png);
+}
+.log_type_out {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.log_type_out .log_type {
+  color: #ff6700;
+}
+.log_link_outer {
+  text-align: center;
+}
+.log_link_outer > a {
+  color: #999;
+}
+.log_link_outer > a:hover {
+  color: #ff6700;
+}
+.log_link_outer > span {
+  padding: 0 3px;
+}
+.log_otherlinks {
+  padding-top: 143px;
+  text-align: center;
+}
+.log_otherlinks > a {
+  width: 30px;
+  height: 30px;
+  margin: 0 17px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.log_otherlinks > a > em {
+  display: block;
+  margin: 4px auto 0;
+  background: url(../img/icons_type.png);
+  width: 18px;
+  height: 18px;
+}
+.log_otherlinks > a.qq {
+  background-color: #0288d1;
+}
+.log_otherlinks > a.qq > em {
+  background-position: -19px 0;
+}
+.log_otherlinks > a.wb {
+  background-color: #d32f2f;
+}
+.log_otherlinks > a.wb > em {
+  background-position: -38px 0;
+}
+.log_otherlinks > a.zfb {
+  background-color: #0ae;
+}
+.log_otherlinks > a.zfb > em {
+  background-position: -57px 0;
+  width: 24px;
+}
+.log_otherlinks > a.wx {
+  background-color: #00d20d;
+}
+.log_otherlinks > a.wx > em {
+  background-position: -83px 0;
+  width: 24px;
+}
+.reg_footer {
+  width: 100%;
+  height: 80px;
+  padding-top: 100px;
+}
+.reg_footer .reg_lang {
+  text-align: center;
+}
+.reg_footer .reg_lang > li {
+  display: inline-block;
+}
+.reg_footer .reg_lang > li > a {
+  padding: 0 10px;
+  color: #333;
+}
+.reg_footer .reg_lang > li > a.problem {
+  color: #757575;
+}
+.reg_footer .reg_copyright {
+  color: #9d9d9d;
+  padding: 10px;
+  text-align: center;
+}
+.reg_footer .reg_copyright a {
+  color: #9d9d9d;
+}
+.reg_footer .reg_copyright img {
+  display: inline-block;
+}

@@ -1,0 +1,245 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  color: #ff6700;
+}
+em,
+i,
+strong,
+b {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+h1 {
+  margin: 0;
+}
+.glyphicon {
+  top: 0;
+}
+.contain {
+  width: 1226px;
+  margin: 0 auto;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/**
+* animation
+*/
+.C3 {
+  color: #333;
+}
+body {
+  background: #f9f9f9;
+  color: #666;
+  min-width: auto;
+}
+.reg_wrapper {
+  width: 854px;
+  height: 558px;
+  padding: 70px 0 80px;
+  margin: 0 auto;
+}
+.reg_outer {
+  height: 100%;
+  background: #fff;
+}
+.reg_outer .reg_logo > img {
+  width: 49px;
+  height: 49px;
+  margin: 0 auto;
+}
+.reg_outer > h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #333;
+}
+.reg_box {
+  width: 332px;
+  padding: 30px 0;
+  margin: 0 auto;
+  line-height: 20px;
+}
+.reg_box h4 {
+  padding-bottom: 5px;
+  color: #333;
+  font-weight: normal;
+}
+.reg_box .reg_country_select {
+  width: 100%;
+  height: 42px;
+  padding-left: 14px;
+  line-height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #e8e8e8;
+  color: #555;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.reg_box .reg_country_select > span {
+  float: left;
+  width: 275px;
+  border-right: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+.reg_box .reg_country_select > em {
+  float: right;
+  background: url(../img/icon_user.png);
+  width: 16px;
+  height: 16px;
+  margin: 11px 12px 0 12px;
+}
+.reg_tip_text {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.reg_phone_outer {
+  width: 330px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  border: 1px solid #e8e8e8;
+}
+.reg_phone_outer .reg_phone {
+  width: 240px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #333;
+}
+.reg_phone_head {
+  float: left;
+  width: 54px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 14px;
+  color: #555;
+  border-right: 1px solid #e8e8e8;
+  cursor: pointer;
+}
+.reg_phone_head .icon_arrow {
+  margin: 17px 0 0 10px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  vertical-align: middle;
+  font-size: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #9d9d9d transparent transparent transparent;
+}
+.tip_err {
+  margin-bottom: 5px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #f66;
+  display: none;
+}
+.reg_tip_err .icon_error {
+  width: 14px;
+  height: 14px;
+  margin: -1px 5px 0 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/error.png);
+}
+.reg_btn_box .reg_btn {
+  width: 332px;
+  height: 42px;
+  margin: 0 auto;
+  line-height: 42px;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  background-color: #ff6700;
+  margin-top: 15px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.reg_btn_box .reg_btn:hover {
+  opacity: 0.82;
+}
+.reg_privacy {
+  padding-top: 40px;
+  text-align: center;
+  color: #9d9d9d;
+}
+.reg_privacy .reg_privacy_selected {
+  padding: 10px 0;
+}
+.reg_privacy a {
+  color: #333;
+  font-weight: bold;
+}
+.reg_footer {
+  width: 100%;
+  height: 80px;
+}
+.reg_footer .reg_lang {
+  text-align: center;
+}
+.reg_footer .reg_lang > li {
+  display: inline-block;
+}
+.reg_footer .reg_lang > li > a {
+  padding: 0 10px;
+  color: #333;
+}
+.reg_footer .reg_lang > li > a.problem {
+  color: #757575;
+}
+.reg_footer .reg_copyright {
+  color: #9d9d9d;
+  padding: 10px;
+  text-align: center;
+}
+.reg_footer .reg_copyright a {
+  color: #9d9d9d;
+}
+.reg_footer .reg_copyright img {
+  display: inline-block;
+}

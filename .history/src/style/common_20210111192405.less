@@ -1,0 +1,117 @@
+@charset 'utf-8';
+
+// 常用参数
+@orange:#ff6700;
+@gray:#b0b0b0;
+@topHei: 40px;
+@carHei: 100px;
+@tempWid: 234px;
+@tempHei: 340px;
+@baseUrl:'../img/';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+ul{list-style: none;margin-bottom: 0;}
+a,a:hover,a:active,a:focus,a:visited{text-decoration: none;}
+a:hover{color: #ff6700;}
+em,i,strong,b{font-style: normal;}
+img{display: block;}
+h1{margin: 0;}
+.glyphicon{top:0}
+.contain{
+    width: 1226px;
+    margin: 0 auto;
+}
+.fleft{float: left;}
+.fright{float: right;}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+}
+.show{display: block;}
+.hide{display: none;}
+
+.ellipsis(){//省略号
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+// 圆角
+.corner(@radius){
+    border-radius:@radius;
+    -webkit-border-radius:@radius;
+    -o-border-radius:@radius;
+    -moz-border-radius:@radius;
+    -ms-border-radius:@radius;
+}
+// 阴影
+.boxShadow(...){
+    box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+}
+// 动画
+.transition(...) {
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+.transform(...) {
+    -webkit-transform: @arguments;
+    -moz-transform: @arguments;
+    -o-transform: @arguments;
+    transform: @arguments;
+}
+/**
+* animation
+*/
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+    @keyframes @name {
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+    @-moz-keyframes @name {
+        @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+    @-o-keyframes @name {
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+    @-webkit-keyframes  @name{
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+    .keyframes(moz,@name,@content);
+    .keyframes(o,@name,@content);
+    .keyframes(webkit,@name,@content);
+    .keyframes(def,@name,@content);
+}
+.animation(...){
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -ms-animation: @arguments;
+    -o-animation:  @arguments;
+    animation: @arguments;
+}
+
