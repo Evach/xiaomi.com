@@ -1,0 +1,412 @@
+
+// 常用参数
+@orange:#ff6700;
+@gray:#b0b0b0;
+@topHei: 40px;
+@carHei: 100px;
+@tempWid: 234px;
+@tempHei: 340px;
+@baseUrl:'../img/';
+
+// 圆角
+.corner(@radius){
+    border-radius:@radius;
+    -webkit-border-radius:@radius;
+    -o-border-radius:@radius;
+    -moz-border-radius:@radius;
+    -ms-border-radius:@radius;
+}
+// 阴影
+.boxShadow(...){
+    box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+}
+// 动画
+.transition(...) {
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+.transform(...) {
+    -webkit-transform: @arguments;
+    -moz-transform: @arguments;
+    -o-transform: @arguments;
+    transform: @arguments;
+}
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+    @keyframes @name {
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+    @-moz-keyframes @name {
+        @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+    @-o-keyframes @name {
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+    @-webkit-keyframes  @name{
+      @content();
+    }
+}
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+    .keyframes(moz,@name,@content);
+    .keyframes(o,@name,@content);
+    .keyframes(webkit,@name,@content);
+    .keyframes(def,@name,@content);
+}
+.animation(...){
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -ms-animation: @arguments;
+    -o-animation:  @arguments;
+    animation: @arguments;
+}
+
+
+body{ min-width: 1226px;}
+.topbanner{
+    >a{
+        width: 100%;
+        height: 120px;
+        display: block;
+        background: url('@{baseUrl}bb3c06a430689ba2357dd7d1fbfa6bab.jpg') 50%;
+        background-size: auto 120px;
+    }
+}
+
+// 动画
+@loadname:loadcenter;
+.keyframes(all,@loadname,{
+    from{
+        transform: scaleY(1)
+    }
+    to{
+        transform: scaleY(.5)
+    }
+   
+});
+@loadside:loadside;
+.keyframes(all,@loadside,{
+    from{
+        transform: scaleY(1)
+    }
+    to{
+        transform: scaleY(.3)
+    }
+   
+});
+
+// 顶部
+.h_top{
+    height: @topHei;
+    background: #333;
+   
+    .h_navbar{
+        ul>li{
+            float: left;
+            position: relative;
+            margin: 0 9px;
+            &::after{
+                content: '|';
+                position: absolute;
+                right: -10px;
+                top: 0;
+                line-height: @topHei;
+                color:#424242;
+            }
+            a{
+                display: block;
+                color: #fff;
+                font-size: 12px;
+                color: @gray;
+                line-height: @topHei;
+                
+                &:hover{
+                    color: #fff;
+                }
+            }
+            &:first-of-type{
+                margin-left: 0;
+            }
+            &:last-of-type{
+                margin-right: 0;
+                &::after{display: none;}
+            }
+        }
+        .car{//购物车部分
+            position: relative;
+            >.car_link{
+                display: block;
+                width: 120px;
+                margin-left: 15px;
+                line-height: @topHei;
+                text-align: center;
+                font-size: 12px;
+                color: @gray;
+                background: #424242;
+                >.glyphicon{
+                    margin-right: 4px;
+                }
+                >.car_num{   
+                    display: inline-block;
+                    width: 30px;
+                    text-align: center;
+                }
+
+            }
+            .car_cont{
+                position: absolute;
+                top: @topHei;
+                right: 0;
+                width: 316px;
+                height: 0;
+                z-index: 99;
+                background: #fff;
+                color: #424242;
+                .boxShadow(0 2px 10px rgba(0,0,0,.15));
+                .transition(height .3s);
+                .car_empty,.car_loading{
+                    text-align: center;
+                    height: @carHei;
+                    line-height: @carHei;
+                }
+                .car_loading{
+                   
+                    padding: 40px;
+                    .loading,.loading::before,.loading::after{
+                        width: 4px;
+                        height: 20px;
+                        display: none;
+                        .transition(all .4s);
+                    }
+                    .loading{
+                        margin: 0 auto;
+                        position: relative;
+                        background: @orange;
+                       
+                        .animation(@loadname ,.3s,linear,infinite);
+                    }
+                    .loading::before,.loading::after{
+                        content:"";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-left: -14px;
+                        margin-top: -10px;
+                        background: lighten(@orange,20%);
+                        .animation(@loadside,.3s,linear,.25s,infinite);
+                    }
+                    .loading::after{
+                        margin-left: 10px;
+                    }
+                }
+                
+            }
+            &:hover{
+                .car_link{
+                    color: @orange;
+                    background: #fff;
+                }
+                .car_cont{
+                    height: @carHei;
+                    .loading,.loading::before,.loading::after{display: block;}
+                    
+                }
+            }
+
+        }
+        
+    }
+}
+// 头部导航
+.h_cont{
+    height: @carHei;
+    position: relative;
+    .xm_logo{
+        display: block;
+        width: 55px;
+        height: 55px;
+        background: @orange;
+        position: relative;
+        margin-top: 22px;
+        margin-right: 7px;
+        &::before,&::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            .transition(all .3s);
+        }
+        &::before{
+            
+            background: url('@{baseUrl}mi-logo.png') no-repeat center;
+        }
+        &::after{
+            .transform(translateX(-100%));
+            background: url('@{baseUrl}mi-home.png') no-repeat center;
+        }
+        &:hover{
+            &::before{.transform(translateX(100%));}
+            &::after{.transform(translateX(0));}
+        }
+    }
+    .hc_nav{
+        padding: 12px 0 0 30px;
+        font-size: 16px;
+        >.hc_link{
+            float: left;
+            // position: relative;
+            >a{
+                display: block;
+                padding: 26px 10px 38px;
+                color: #333;
+                &:hover{
+                    color: @orange;
+                }
+            }
+            
+        }
+        >.hc_link_all {
+            float: left;
+            position: relative;
+            width: 142px;
+            height: 88px;
+            padding-right: 15px;
+            >a{
+                display: block;
+                padding: 26px 0 38px;
+                text-align: right;
+                &.hide{
+                    visibility: hidden;
+                    display: block;
+                }
+                &:hover{
+                    color: #333333;
+                }
+            }
+        }
+    }
+    .hc_search{
+        margin-top: 25px;
+        >input{
+            width: 245px;
+            height: 50px;
+            border: solid 1px #e0e0e0;
+            padding: 0 10px;
+        }
+        >a{
+            display: inline-block;
+            width: 52px;
+            height: 50px;
+            margin-left: -1px;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.2em;
+            color: #616161;
+            border: solid 1px #e0e0e0;
+            &:hover{
+                background: @orange;
+                color: #fff;
+            }
+        }
+    }
+   
+}
+
+.hclink_menu_outer{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 111;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+    overflow: hidden;
+    .transition(height .5s);
+    &.active{
+        height: 229px;
+        box-shadow: 0 3px 4px rgba(0,0,0,.18);
+    }
+    .hclink_menu{
+        font-size: 12px;
+        li{
+            float: left;
+            width: 180px;
+            padding: 35px 12px 0;
+            text-align: center;
+            position: relative;
+            >a{
+                &:hover{color:@orange}
+                img{width: 160px;height: 110px;}
+                
+                .title{
+                    fon
+                    margin: 0;
+                    line-height: 20px;
+                    color: #333;
+                }
+                .price{
+                    margin: 0;
+                    line-height: 20px;
+                    color: #ff6700;
+                }
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 35px;
+                z-index: 1;
+                width: 1px;
+                height: 100px;
+                background-color: #e0e0e0;
+            }
+            
+        }
+        >li:first-child::after{
+            display: none;
+        }
+    }
+}
+
+
+// list
+.type_list{
+    width: @tempWid;
+    padding: 20px 0;
+    background: rgba(105,101,101,.6);
+    position: absolute;
+    top: 88px;
+    left: -92px;
+    z-index: 99;
+    >li>a{
+        display: block;
+        height: 42px;
+        line-height: 42px;
+        color: #fff;
+        padding-left: 30px;
+        position: relative;
+        >em{
+            position: absolute;
+            right: 20px;
+            top: 14px;
+            font-size: 14px;
+        }
+        &:hover{
+            background: @orange;
+        }
+    }
+}

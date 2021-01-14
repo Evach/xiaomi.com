@@ -1,0 +1,14 @@
+[
+    {
+        "name":"xmsj",
+        "src":["./img/tab/a1.webp.jpg","./img/tab/a2.webp.jpg","./img/tab/a3.webp.jpg","./img/tab/a4.webp.jpg","./img/tab/a5.webp.jpg"]
+    },
+    {
+        "name":"redmi",
+        "src":["./img/tab/b1.webp.jpg","./img/tab/b2.webp.jpg","./img/tab/b3.webp.jpg","./img/tab/b4.webp.jpg","./img/tab/b5.webp.jpg"]
+    },
+    {
+        "name":"ds",
+        "src":["./img/tab/a1.webp.jpg","./img/tab/a2.webp.jpg","./img/tab/a3.webp.jpg","./img/tab/a4.webp.jpg","./img/tab/a5.webp.jpg"]
+    }
+]

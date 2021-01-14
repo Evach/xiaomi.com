@@ -4,6 +4,7 @@
   right: auto;
   margin-left: 613px;
   bottom: 40px;
+  z-index: 999;
 }
 .aside_tool li {
   position: relative;

@@ -1,0 +1,7 @@
+class setImg{
+
+
+
+}
+
+export {setImg}

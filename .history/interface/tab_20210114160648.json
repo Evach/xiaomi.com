@@ -1,0 +1,121 @@
+[
+    {
+        "name":"xmsj",
+        "data":[
+            {
+                "src":"./img/tab/a1.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a2.webp.jpg",
+                "price":"3999",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a3.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a4.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a5.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            }
+            ]
+        
+    },
+    {
+        "name":"redmi",
+        "src":[
+            {
+                "src":"./img/tab/b1.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b2.webp.jpg",
+                "price":"3999",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b3.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b4.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b5.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            }
+            ]
+
+    },
+    {
+        "name":"tv",
+        "src":[
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            }
+            ]
+    },
+    {
+        "name":"mac",
+        "src": [
+            {
+                "src":"./img/tab/d1.webp.jpg",
+                "price":"48899",
+                "title":"<div class="container"><ul class="children-list clearfix"><li class="first"><a href="https://www.mi.com/redmi-g" target="_blank" data-log_code="31pchomeother004001#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.2" data-settrack="true" onclick="_msq.push(['trackEvent','31pchomeother004001#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.2','https://www.mi.com/redmi-g','81190ccc4d52f577-4539e38325517a50','&quot;&quot;']);"><div class="figure figure-thumb"><img src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0bfdd3b985b4a9da58a1f5a861c5895f.png?thumb=1&amp;w=240&amp;h=165&amp;f=webp&amp;q=90" alt="Redmi G 游戏本" width="160" height="110"></div> <div class="title">Redmi G 游戏本</div></a></li> <li><a href="https://www.mi.com/buy?product_id=10000242" target="_blank" data-log_code="31pchomeother004002#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.3" data-settrack="true" onclick="_msq.push(['trackEvent','31pchomeother004002#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.3','https://www.mi.com/buy?product_id=10000242','81190ccc4d52f577-1008b6dee8762519','&quot;&quot;']);"><div class="figure figure-thumb"><img src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/3e6c9a677acbb3b0c75d4d0d83e8a695.png?thumb=1&amp;w=240&amp;h=165&amp;f=webp&amp;q=90" alt="RedmiBook 16" width="160" height="110"></div> <div class="title">RedmiBook 16</div> <p class="price">4499元起</p></a></li> <li><a href="https://www.mi.com/buy?product_id=10000241" target="_blank" data-log_code="31pchomeother004003#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.4" data-settrack="true" onclick="_msq.push(['trackEvent','31pchomeother004003#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.4','https://www.mi.com/buy?product_id=10000241','81190ccc4d52f577-2c64760e8b0eae94','&quot;&quot;']);"><div class="figure figure-thumb"><img src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/e27b3211230c2b8c21c0ef4efcbc17bc.png?thumb=1&amp;w=240&amp;h=165&amp;f=webp&amp;q=90" alt="RedmiBook 14 Ⅱ" width="160" height="110"></div> <div class="title">RedmiBook 14 Ⅱ</div> <p class="price">3199元起</p></a></li> <li><a href="https://www.mi.com/buy?product_id=10000237" target="_blank" data-log_code="31pchomeother004004#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.5" data-settrack="true" onclick="_msq.push(['trackEvent','31pchomeother004004#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.5','https://www.mi.com/buy?product_id=10000237','81190ccc4d52f577-c962c496099bb3f7','&quot;&quot;']);"><div class="figure figure-thumb"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&amp;w=240&amp;h=165" alt="Pro 15.6&quot; 2020款" width="160" height="110"></div> <div class="title">Pro 15.6" 2020款</div> <p class="price">5999元起</p></a></li> <li><a href="https://www.mi.com/buy?product_id=10000253" target="_blank" data-log_code="31pchomeother004005#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.6" data-settrack="true" onclick="_msq.push(['trackEvent','31pchomeother004005#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.6','https://www.mi.com/buy?product_id=10000253','81190ccc4d52f577-128f7344b814d889','&quot;&quot;']);"><div class="figure figure-thumb"><img src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/682027c81244d5244d72990cc8b5341f.png?thumb=1&amp;w=240&amp;h=165&amp;f=webp&amp;q=90" alt="RedmiBook Air 13" width="160" height="110"></div> <div class="title">RedmiBook Air 13</div> <p class="price">4499元起</p></a></li> <li><a href="https://www.mi.com/monitor34" target="_blank" data-log_code="31pchomeother004006#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.7" data-settrack="true" onclick="_msq.push(['trackEvent','31pchomeother004006#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476904.7','https://www.mi.com/monitor34','81190ccc4d52f577-b07c7ad88b14e010','&quot;&quot;']);"><div class="figure figure-thumb"><img src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/0f0f2175b9a6d4fdb0f0eeb843398044.png?thumb=1&amp;w=240&amp;h=165&amp;f=webp&amp;q=90" alt="显示器" width="160" height="110"></div> <div class="title">显示器</div> <p class="price">2399元</p></a></li></ul></div>"
+            },
+        ]
+    },
+    {
+        "name":"jd",
+        "src":["./img/tab/d1.webp.jpg","./img/tab/d1.webp.jpg","./img/tab/d1.webp.jpg","./img/tab/d1.webp.jpg"]
+    },
+    {
+        "name":"lyq",
+        "src":["./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg"]
+    },
+    {
+        "name":"znyj",
+        "src":["./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg"]
+    }
+]

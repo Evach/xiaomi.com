@@ -19,7 +19,7 @@
   right: 30px;
   bottom: 20px;
   text-align: right;
-  z-index: 99;
+  z-index: 60;
 }
 .swiper_wrapper .swiper_pagination > span {
   display: inline-block;

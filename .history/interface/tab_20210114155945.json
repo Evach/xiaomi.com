@@ -1,0 +1,31 @@
+[
+    {
+        "name":"xmsj",
+        "src":["./img/tab/a1.webp.jpg","./img/tab/a2.webp.jpg","./img/tab/a3.webp.jpg","./img/tab/a4.webp.jpg","./img/tab/a5.webp.jpg"]
+        
+    },
+    {
+        "name":"redmi",
+        "src":["./img/tab/b1.webp.jpg","./img/tab/b2.webp.jpg","./img/tab/b3.webp.jpg","./img/tab/b4.webp.jpg","./img/tab/b5.webp.jpg"]
+    },
+    {
+        "name":"tv",
+        "src":["./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg"]
+    },
+    {
+        "name":"mac",
+        "src":["./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg","./img/tab/c1.webp.jpg"]
+    },
+    {
+        "name":"jd",
+        "src":["./img/tab/d1.webp.jpg","./img/tab/d1.webp.jpg","./img/tab/d1.webp.jpg","./img/tab/d1.webp.jpg"]
+    },
+    {
+        "name":"lyq",
+        "src":["./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg","./img/tab/e1.webp.jpg"]
+    },
+    {
+        "name":"znyj",
+        "src":["./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg"]
+    }
+]

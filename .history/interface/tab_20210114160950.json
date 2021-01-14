@@ -1,0 +1,168 @@
+[
+    {
+        "name":"xmsj",
+        "data":[
+            {
+                "src":"./img/tab/a1.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a2.webp.jpg",
+                "price":"3999",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a3.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a4.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            },
+            {
+                "src":"./img/tab/a5.webp.jpg",
+                "price":"3799",
+                "title":"小米11"
+            }
+            ]
+        
+    },
+    {
+        "name":"redmi",
+        "src":[
+            {
+                "src":"./img/tab/b1.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b2.webp.jpg",
+                "price":"3999",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b3.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b4.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            },
+            {
+                "src":"./img/tab/b5.webp.jpg",
+                "price":"3799",
+                "title":"Redmi Note 9 系列"
+            }
+            ]
+
+    },
+    {
+        "name":"tv",
+        "src":[
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            },
+            {
+                "src":"./img/tab/c1.webp.jpg",
+                "price":"48899",
+                "title":"小米电视大师 82英寸至尊纪念版"
+            }
+            ]
+    },
+    {
+        "name":"mac",
+        "src": [
+            {
+                "src":"./img/tab/d1.webp.jpg",
+                "price":"29999",
+                "title":"Redmi G 游戏本"
+            },
+            {
+                "src":"./img/tab/d1.webp.jpg",
+                "price":"29999",
+                "title":"Redmi G 游戏本"
+            },
+            {
+                "src":"./img/tab/d1.webp.jpg",
+                "price":"29999",
+                "title":"Redmi G 游戏本"
+            },
+            {
+                "src":"./img/tab/d1.webp.jpg",
+                "price":"29999",
+                "title":"Redmi G 游戏本"
+            },
+            {
+                "src":"./img/tab/d1.webp.jpg",
+                "price":"29999",
+                "title":"Redmi G 游戏本"
+            }
+        ]
+    },
+    {
+        "name":"jd",
+        "src":[
+            {
+                "src":"./img/tab/e1.webp.jpg",
+                "price":"599",
+                "title":"小米路由器AX6000"
+            },
+            {
+                "src":"./img/tab/e1.webp.jpg",
+                "price":"599",
+                "title":"小米路由器AX6000"
+            },
+            {
+                "src":"./img/tab/e1.webp.jpg",
+                "price":"599",
+                "title":"小米路由器AX6000"
+            },
+            {
+                "src":"./img/tab/e1.webp.jpg",
+                "price":"599",
+                "title":"小米路由器AX6000"
+            }
+        ]
+    },
+    {
+        "name":"lyq",
+        "src":[
+            {
+                "src":"./img/tab/e1.webp.jpg",
+                "price":"599",
+                "title":"米家互联网空调C1（一级能效）"
+            },
+        ]
+    },
+    {
+        "name":"znyj",
+        "src":["./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg","./img/tab/f1.webp.jpg"]
+    }
+]

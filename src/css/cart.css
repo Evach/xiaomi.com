@@ -511,6 +511,10 @@ p {
 .cart_table .change_num > a:hover {
   background: #e0e0e0;
 }
+.cart_table .change_num > a:first-child {
+  transform: translateX(-1px);
+  -webkit-transform: translateX(-1px);
+}
 .cart_table .change_num > a:last-child {
   transform: translateX(1px);
   -webkit-transform: translateX(1px);
