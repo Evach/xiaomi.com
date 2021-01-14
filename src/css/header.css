@@ -277,7 +277,13 @@ body {
 }
 .h_cont .hc_nav > .link_all > a {
   padding: 26px 0 38px;
+  text-align: right;
+}
+.h_cont .hc_nav > .link_all > a.hide {
   visibility: hidden;
+}
+.h_cont .hc_nav > .link_all > a:hover {
+  color: #333333;
 }
 .h_cont .hc_search {
   margin-top: 25px;
@@ -289,6 +295,7 @@ body {
   padding: 0 10px;
 }
 .h_cont .hc_search > a {
+  display: inline-block;
   width: 52px;
   height: 50px;
   margin-left: -1px;

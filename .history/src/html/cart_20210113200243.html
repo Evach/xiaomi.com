@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../js/cart.js" type="module"></script>
+</head>
+
+<body>
+    <div class="cart_header">
+        <div class="contain clearfix">
+            <h1 class="cart_header_logo  fleft">
+                <a href="../index.html" class="xm_logo" title="小米官网"></a>
+            </h1>
+            <div class="cart_header_title fleft">
+                <h2>我的购物车</h2>
+                <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+            </div>
+            <div class="cart_header_info fright clearfix">
+                <span class="user fleft">
+                    <a class="user_name" href="./login.html">
+                        <span class="name" id="username">登录</span>
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </a>
+                    <div class="user_menu_wrapper">
+                        <ul class="user_menu">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">评价晒单</a></li>
+                            <li><a href="#">我的喜欢</a></li>
+                            <li><a href="#">小米账户</a></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                    </div>
+                </span>
+                <span class="sep fleft">|</span>
+                <a class="cart_link_order fleft" href="#">我的订单</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart_main">
+        <div class="contain">
+            <div class="table-responsive cart_table_out">
+                <table class="table cart_table">
+                    <tr>
+                        <th width="110">
+                            <span class="icon_check"><i class="glyphicon glyphicon-ok"></i></span>全选
+                        </th>
+                        <th width="500">商品名称</th>
+                        <th width="158">单价</th>
+                        <th width="150">数量</th>
+                        <th width="201">小计</th>
+                        <th width="80">操作</th>
+                        <th width="26"></th>
+                    </tr>
+                    <tr>
+                        <td><span class="icon_check"><i class="glyphicon glyphicon-ok"></i></span></td>
+                        <td class="text-">
+                            <a href="./product.html" class="link">
+                                <img src="../img/pro/Note95G.jpg" alt="" width="80" height="80">
+                                <p class="title">Redmi Note 9 5G 6GB+128GB 流影紫</p>
+                            </a>
+                        </td>
+                        <td>1699元</td>
+                        <td>
+                            <div class="change_num clearfix">
+                                <a href="javascript:void(0)"> <i class="iconfont">+</i></a>
+                                <input type="text" autocomplete="off" class="goods-num">
+                                <a href="javascript:void(0)"><i class="iconfont">-</i></a>
+                            </div>
+                        </td>
+                        <td><strong>1699元</strong></td>
+                        <td><a href="javascript:;" class="del"><i class="glyphicon glyphicon-remove"></i></a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -7,7 +7,6 @@ body {
   font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
   color: #333;
   background-color: #fff;
-  min-width: 1226px;
 }
 ul {
   list-style: none;
@@ -31,6 +30,11 @@ b {
 }
 img {
   display: block;
+}
+img,
+input,
+button {
+  outline: none;
 }
 h1 {
   margin: 0;
@@ -169,14 +173,14 @@ body {
   border-style: solid;
   border-color: #9d9d9d transparent transparent transparent;
 }
-.tip_err {
+.reg_tip_err {
   margin-bottom: 5px;
   line-height: 20px;
   font-size: 14px;
   color: #f66;
   display: none;
 }
-.tip_err .icon_error {
+.reg_tip_err .icon_error {
   width: 14px;
   height: 14px;
   margin: -1px 5px 0 0;
