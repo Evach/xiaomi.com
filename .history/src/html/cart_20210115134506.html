@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../js/cart.js" type="module"></script>
+</head>
+
+<body>
+    <div class="cart_header">
+        <div class="contain clearfix">
+            <h1 class="cart_header_logo  fleft">
+                <a href="../index.html" class="xm_logo" title="小米官网"></a>
+            </h1>
+            <div class="cart_header_title fleft">
+                <h2>我的购物车</h2>
+                <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+            </div>
+            <div class="cart_header_info fright clearfix">
+                <span class="user fleft">
+                    <a class="user_name" href="./login.html">
+                        <span class="name" id="username">登录</span>
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </a>
+                    <div class="user_menu_wrapper">
+                        <ul class="user_menu">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">评价晒单</a></li>
+                            <li><a href="#">我的喜欢</a></li>
+                            <li><a href="#">小米账户</a></li>
+                            <li><a href="#" id="exit">退出登录</a></li>
+                        </ul>
+                    </div>
+                </span>
+                <span class="sep fleft">|</span>
+                <a class="cart_link_order fleft" href="#">我的订单</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart_main" style="display: none;">
+        <div class="contain">
+            <div class="table-responsive cart_table_out">
+                <table class="table cart_table" id="cartTable">
+                    <tr>
+                        <th width="110">
+                            <span class="icon_check" name="all"><i class="glyphicon glyphicon-ok"></i></span>全选
+                        </th>
+                        <th width="520">商品名称</th>
+                        <th width="158">单价</th>
+                        <th width="150">数量</th>
+                        <th width="201">小计</th>
+                        <th width="80">操作</th>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="cart_bar clearfix fixed">
+                <div class="cart_bar_left fleft">
+                    <a href="#">继续购物</a>
+                    <span class="cart_total">共 <em id="allNum">0</em> 件商品，已选择 <em id="selectedNum">0</em> 件</span>
+                </div>
+                <div class="cart_bar_right fright">
+                    <span>合计：<strong id="amount">0</strong>元</span>
+                    <a href="javascript:;" class="sum_btn ">去结算</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="cart_main">
+        <div class="contain">
+            <div class="cart_empty_wrap clearfix">
+                <div class="empty_img fleft"><img src="../img/cart-empty.png" alt=""></div>
+                <div class="empty_hint fright">
+                    <h2>您的购物车还是空的！</h2>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer"></div>
+</body>
+
+</html>

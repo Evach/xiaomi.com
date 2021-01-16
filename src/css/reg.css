@@ -144,6 +144,9 @@ body {
   line-height: 20px;
   border: 1px solid #e8e8e8;
 }
+.reg_phone_outer.err {
+  border-color: #ff6700;
+}
 .reg_phone_outer .reg_phone {
   width: 240px;
   height: 20px;
@@ -189,7 +192,7 @@ body {
   vertical-align: middle;
   background: url(../img/error.png);
 }
-.reg_btn_box .reg_btn {
+.btn_submit {
   width: 332px;
   height: 42px;
   margin: 0 auto;
@@ -204,7 +207,7 @@ body {
   border: none;
   color: #fff;
 }
-.reg_btn_box .reg_btn:hover {
+.btn_submit:hover {
   opacity: 0.82;
 }
 .reg_privacy {
@@ -246,4 +249,58 @@ body {
 }
 .reg_footer .reg_copyright img {
   display: inline-block;
+}
+.yzm_title_box {
+  padding: 30px 0 20px;
+}
+.yzm_title_box .content_title {
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+.yzm_title_box .content_title .address_place {
+  color: #ff6700;
+}
+.resendcode {
+  width: 200px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+.send_status {
+  background: #e0e0e0;
+  margin-left: 8px;
+  vertical-align: top;
+  display: inline-block;
+  height: 40px;
+  width: 98px;
+  color: #ff6700;
+  text-align: center;
+  line-height: 38px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.step_tip {
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+.step_tip > h4 {
+  font-weight: 600;
+  color: #666;
+}
+.step_tip .address_place {
+  color: #ff6700;
+}
+.reg_phone_outer > input {
+  width: 310px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  display: inline-block;
+  color: #333;
+  border: none;
 }

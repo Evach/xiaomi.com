@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+@import './common.less';
+
+.C3{
+    color:#333;
+}
+@orange:#ff6700;
+
+body{
+    background: #f9f9f9;
+    color: #666;
+    min-width: auto;
+}
+.reg_wrapper{
+    width: 854px;
+    height: 558px;
+    padding: 70px 0 80px;
+    margin:0 auto;
+}
+.reg_outer{
+    height: 100%;
+    background: #fff;
+    .reg_logo > img{
+        width: 49px;
+        height: 49px;
+        margin: 0 auto;
+    }
+    >h2{
+        text-align: center;
+        margin-top: 40px;
+        font-size: 30px;
+        font-weight: normal;
+        .C3;
+    }
+}
+.reg_box{
+    width: 332px;
+    padding: 30px 0;
+    margin: 0 auto;
+    line-height: 20px;
+    
+    h4{
+        padding-bottom: 5px;
+        .C3;
+        font-weight: normal;
+    }
+    .reg_country_select{
+        width: 100%;
+        height: 42px;
+        padding-left: 14px;
+        line-height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        border: 1px solid #e8e8e8;
+        color: #555;
+        box-sizing: border-box;
+        cursor: pointer;
+        >span{
+            float: left;
+            width: 275px;
+            border-right: 1px solid #e8e8e8;
+            cursor: pointer;
+        }
+        >em{
+            float: right;
+            background: url(../img/icon_user.png);
+            width: 16px;
+            height: 16px;
+            margin: 11px 12px 0 12px;
+        }
+    }
+}
+.reg_tip_text{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.reg_phone_outer{
+    width: 330px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    border: 1px solid #e8e8e8;
+    &.err{border-color:#ff6700}
+    .reg_phone{
+        width: 240px;
+        height: 20px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        .C3;
+    }
+}
+.reg_phone_head{
+    float: left;
+    width: 54px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 14px;
+    color: #555;
+    border-right: 1px solid #e8e8e8;
+    cursor: pointer;
+    .icon_arrow{
+        margin: 17px 0 0 10px;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        vertical-align: middle;
+        font-size: 0;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #9d9d9d transparent transparent transparent;
+    }
+}
+.reg_tip_err{
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #f66;
+    display: none;
+    .icon_error{
+        width: 14px;
+        height: 14px;
+        margin: -1px 5px 0 0;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../img/error.png);
+    }
+}
+
+.reg_btn,.next_btn{
+    width: 332px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    background-color: #ff6700;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    color: #fff;
+    &:hover{
+        opacity: .82;
+    }
+}
+
+.reg_privacy{
+    padding-top: 40px;
+    text-align: center;
+    color: #9d9d9d;
+    .reg_privacy_selected{
+        padding: 10px 0;
+    }
+    a{
+        .C3;
+        font-weight: bold;
+    }
+}
+.reg_footer{
+    width: 100%;
+    height: 80px;
+    .reg_lang{
+        text-align: center;
+        >li{
+            display: inline-block;
+            >a{
+                padding: 0 10px;
+                .C3;
+                &.problem{color: #757575;}
+            }
+        }
+    }
+    .reg_copyright{
+        color: #9d9d9d;
+        padding: 10px;
+        text-align: center;
+        a{ color: #9d9d9d;}
+        img{display: inline-block;}
+    }
+}
+.yzm_title_box{
+    padding: 30px 0 20px;
+    .content_title{
+        color: #333;
+        font-size: 15px;
+        font-weight: bold;
+        .address_place{
+            color: @orange;
+        }
+    }
+    .resendcode{
+        width: 170px;
+    }
+}

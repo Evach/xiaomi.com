@@ -617,3 +617,30 @@ p {
 .cart_bar .cart_bar_right .sum_btn.active:hover {
   background: #e45d03;
 }
+.cart_empty_wrap {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-self: center;
+  margin: 100px;
+}
+.cart_empty_wrap .empty_hint {
+  margin-left: 30px;
+}
+.cart_empty_wrap .empty_hint > h2 {
+  font-size: 36px;
+  color: #b0b0b0;
+  font-weight: bold;
+}
+.cart_empty_wrap .empty_hint > a {
+  display: inline-block;
+  width: 170px;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background: #ff6700;
+  text-align: center;
+  margin-top: 15px;
+}

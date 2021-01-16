@@ -345,6 +345,9 @@ body {
   position: relative;
   margin: 0 9px;
 }
+.h_top .h_navbar .clearfix > ul > li.log_show {
+  display: none;
+}
 .h_top .h_navbar .clearfix > ul > li::after {
   content: '|';
   position: absolute;
@@ -621,10 +624,6 @@ body {
   border-top: 1px solid #e0e0e0;
   background: #fff;
   overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s;
 }
 .hclink_menu_outer.active {
   height: 229px;

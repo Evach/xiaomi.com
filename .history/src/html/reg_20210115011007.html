@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米帐号 -注册</title>
+    <link rel="stylesheet" href="../css/reg.css">
+    <script src="../js/reg.js" type="module"></script>
+</head>
+
+<body>
+    <div class="reg_wrapper">
+        <div class="reg_outer">
+            <p class="reg_logo"><img src="../img/milogo.png"></p>
+            <h2>注册小米帐号</h2>
+            <div class="reg_step reg_step1">
+                <div class="reg_box">
+                    <h4>国家/地区</h4>
+                    <div class="reg_country_select clearfix">
+                        <span>中国</span>
+                        <em></em>
+                    </div>
+                    <p class="reg_tip_text">成功注册帐号后，国家/地区将不能被修改</p>
+                    <h4>手机号码</h4>
+                    <div class="reg_phone_outer clearfix">
+                        <div class="reg_phone_head">
+                            <span>+86</span>
+                            <i class="icon_arrow"></i>
+                        </div>
+                        <input type="text" placeholder="请输入手机号码" class="reg_phone">
+                    </div>
+                    <div class="reg_tip_err">
+                        <em class="icon_error"></em><span>手机号码格式错误</span>
+                    </div>
+                    <div class="reg_btn_box">
+                        <button class="btn_submit reg_btn">立即注册</button>
+                    </div>
+                </div>
+                <div class="reg_privacy">
+                    <label class="reg_privacy_selected">
+                        已阅读并同意：小米 <a href="#" target="_blank">用户协议</a>和<a href="#"> 隐私政策 </a>
+                    </label>
+                </div>
+            </div>
+            <div class="reg_step reg_step2 reg_box" style="display: none;">
+                <div class="yzm_title_box">
+                    <div class="content_title">我们已经发送一条验证短信至<span class="address_place ">+86 <em class></em></span></div>
+                    <p>请输入短信中的验证码</p>
+                </div>
+                <div class="reg_phone_outer">
+                    <label class="labelbox wap_resend_label">
+                        <input class="resendcode" type="text" placeholder="请输入验证码" name="ticket">
+                        <a class="send_status" href="javascript:void(0)">676767</a>
+                    </label>
+                </div>
+                <div class="reg_tip_err">
+                    <em class="icon_error"></em><span>手机号码格式错误</span>
+                </div>
+                <!-- <div class="unavaliable">
+                    <a target="_blank" href="#">收不到验证码？</a>
+                </div> -->
+
+                <input class="btn_submit next_btn" type="submit" value="下一步">
+                <!-- <input class="btn332 btn_reg_2  change_view" data-to="phone-step1" type="button" value="返回"> -->
+
+            </div>
+            <div class="reg_step reg_step3 reg_box" style="display: none;">
+                <div class="yzm_title_box">
+                    <div class="step_tip">
+                        您注册的手机号为<span class="address_place ">+86 175******40</span>
+                        <h4>请设置您的密码</h4>
+                    </div>
+
+                </div>
+                <div class="reg_phone_outer">
+                    <input name="repassword" type="password" placeholder="请输入密码" class="psw">
+                </div>
+                <div class="reg_phone_outer">
+                    <input name="repassword" type="password" placeholder="请输入确认密码" class="surepsw">
+                </div>
+                <div class="reg_tip_err">
+                    <em class="icon_error"></em><span>请输入密码</span>
+                </div>
+
+                <input class="btn_submit end_btn" type="submit" value="提交">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="reg_footer">
+        <ul class="reg_lang">
+            <li><a href="#">简体</a>|</li>
+            <li><a href="#">繁体</a>|</li>
+            <li><a href="#">English</a>|</li>
+            <li><a href="#" class="problem">常见问题</a></li>
+        </ul>
+        <p class="reg_copyright">
+            <span>小米公司版权所有-京ICP备10046444-<a class="reg_copyright_link" target="_blank"
+                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><span><img
+                            src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"></span>京公网安备11010802020134</a>-京ICP证110507号</span>
+        </p>
+    </div>
+</body>
+
+</html>
