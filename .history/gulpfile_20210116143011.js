@@ -10,14 +10,13 @@ const jsmin = require('gulp-uglify');
 const path = require('path');
 // const merge = require('merge-stream');
 const copy = require('gulp-copy');
-const util = require('gulp-util');//打印错误信息
 // const buffer = require('vinyl-buffer');
 
 
 gulp.task('htmlmin', function() {
-    return gulp.src('./src/html/public/*.html')
+    return gulp.src(['./src/*.html','./src/html/*.html'])
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest('./dist/html/public'));
+        .pipe(gulp.dest(['./dist/html''./dist/html']));
 });
 
 
@@ -32,9 +31,6 @@ gulp.task('cssmin',function(){
 gulp.task('jsmin',function(){
     return gulp.src('./src/js/*.js')
         .pipe(jsmin())
-        .on('error', function(err) {
-            util.log(util.colors.red('[Error]'), err.toString());
-        })
         .pipe(rename({suffix:'.min'}))
         .pipe(gulp.dest('./dist/js'));
 })

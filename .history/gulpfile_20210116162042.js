@@ -36,7 +36,7 @@ gulp.task('jsmin',function(){
             util.log(util.colors.red('[Error]'), err.toString());
         })
         .pipe(rename({suffix:'.min'}))
-        .pipe(gulp.dest('./dist/js'));
+        .pipe(gulp.dest('./dist/js'));n'p
 })
 
 // gulp.task('sprite', function() {

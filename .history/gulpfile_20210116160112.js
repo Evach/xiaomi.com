@@ -10,7 +10,7 @@ const jsmin = require('gulp-uglify');
 const path = require('path');
 // const merge = require('merge-stream');
 const copy = require('gulp-copy');
-const util = require('gulp-util');//打印错误信息
+const util = require('gulp-util');
 // const buffer = require('vinyl-buffer');
 
 
